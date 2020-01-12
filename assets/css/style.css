@@ -1,0 +1,17 @@
+body html {
+    height: 100%;
+    margin: 0;
+
+}
+
+body {
+    background-image: url("../images/woodtableBG.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+
+
+}
+

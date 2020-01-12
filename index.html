@@ -5,14 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- This is the link to my reset css page -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- This is the lik to my style css page  -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Link to Bootstrap for any fun easy stuff to do -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Guess the Crystal count</title>
 </head>
 
 <body>
+    <!-- here is the javascript file for the cyrstal gemstone collector -->
+    <script src="assets/javascript/game.js">
+    </script>
+
+
+
+    <!-- Main jumbotron to list the instructions for the game, and includes the start button -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Gemstone Collector Game</h1>
+            <p>Instructions:
+                You will be given a random number at the start of the game. Ther are four gemstone below to collect.
+                Each gemstone has a specific amount of points, and each time you click on the gemstone, you accumulate
+                points.
+                You win a game by matching the correct amount of gemstones with the random number given to you at the
+                beginning of the game. The value of each gemstone is hidden. At the beginning of each game, the values
+                for the gemstone will change.
+            </p>
+            <p><a class="btn btn-info btn-lg" role="button" onclick="window.location.reload();">Start the Game </a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- rows that will hold my gemstones on the table -->
+        <div class="row">
+            <!-- blue diamond  -->
+            <div class="col-md-3">
+                <h2>Blue Diamond</h2>
+                <img class="img-fluid rounded-circle" src="assets/images/blueD.jpg" class="mx-auto d-block">
+            </div>
+            <!-- red garnet -->
+            <div class="col-md-3">
+                <h2>Red Garnet</h2>
+                <img class="img-fluid rounded-circle" src="assets/images/redG.jpg" class="mx-auto d-block">
+            </div>
+            <!-- green gemstone  -->
+            <div class="col-md-3">
+                <h2>Green Gemstone</h2>
+                <img class="img-fluid rounded-circle" src="assets/images/greenSp.jpg" class="mx-auto d-block">
+            </div>
+            <!-- crazy opal gemstone -->
+            <div class="col-md-3">
+                <h2>Crazy Opal</h2>
+                <img class="img-fluid rounded-circle" src="assets/images/roundOpal.jpg" class="mx-auto d-block">
+
+            </div>
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
