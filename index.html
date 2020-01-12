@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <!-- Link to the jQuery libray -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <!-- here is the javascript file for the cyrstal gemstone collector -->
     <script src="assets/javascript/game.js">
     </script>
@@ -59,28 +63,29 @@
         <!-- rows that will hold my gemstones on the table -->
         <div class="row">
             <!-- blue diamond  -->
-            <div class="col-md-3">
+            <div id="blueD" class="col-md-3">
                 <h2>Blue Diamond</h2>
                 <img class="img-fluid rounded-circle" src="assets/images/blueD.jpg" class="mx-auto d-block">
             </div>
             <!-- red garnet -->
-            <div class="col-md-3">
+            <div id="redG" class="col-md-3">
                 <h2>Red Garnet</h2>
                 <img class="img-fluid rounded-circle" src="assets/images/redG.jpg" class="mx-auto d-block">
             </div>
             <!-- green gemstone  -->
-            <div class="col-md-3">
+            <div id="greenG" class="col-md-3">
                 <h2>Green Gemstone</h2>
                 <img class="img-fluid rounded-circle" src="assets/images/greenSp.jpg" class="mx-auto d-block">
             </div>
             <!-- crazy opal gemstone -->
-            <div class="col-md-3">
+            <div id="crazyOp" class="col-md-3">
                 <h2>Crazy Opal</h2>
                 <img class="img-fluid rounded-circle" src="assets/images/roundOpal.jpg" class="mx-auto d-block">
 
             </div>
         </div>
         <div class="row">
+            <div class="col-md-4"></div>
             <div id="total" class="col-md-4">
                 <h3>Total score</h3>
                 <p id="userTotal">text</p>
