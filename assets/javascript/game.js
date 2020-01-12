@@ -3,6 +3,12 @@ $(document).ready(function() {
 
 // List of Global Variables 
 
+
+
+
+
+///
+//Main game's functions
 //    * There will be four crystals displayed as buttons on the page.
     // complete
 
