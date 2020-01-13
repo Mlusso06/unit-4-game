@@ -39,7 +39,7 @@
                 beginning of the game. The value of each gemstone is hidden. At the beginning of each game, the values
                 for the gemstone will change.
             </p>
-            <p><a class="btn btn-info btn-lg" role="button" onclick="window.location.reload();">Start the Game </a></p>
+            <p><a class="btn btn-info btn-lg" role="button" onclick="window.location.reload();">Re-Start the Game </a></p>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div id="winLoss" class="col-md-4">
@@ -63,22 +63,22 @@
         <!-- rows that will hold my gemstones on the table -->
         <div class="row">
             <!-- blue diamond  -->
-            <div id="blueD" class="col-md-3">
+            <div id="blueD" class="col-md-3 gemStone" value="1">
                 <h2>Blue Diamond</h2>
-                <img class="img-fluid rounded-circle" src="assets/images/blueD.jpg" class="mx-auto d-block">
+                <img class="img-fluid rounded-circle gemStone" src="assets/images/blueD.jpg" class="mx-auto d-block">
             </div>
             <!-- red garnet -->
-            <div id="redG" class="col-md-3">
+            <div id="redG" class="col-md-3 gemStone" value="2">
                 <h2>Red Garnet</h2>
                 <img class="img-fluid rounded-circle" src="assets/images/redG.jpg" class="mx-auto d-block">
             </div>
             <!-- green gemstone  -->
-            <div id="greenG" class="col-md-3">
+            <div id="greenG" class="col-md-3 gemStone" value="3">
                 <h2>Green Gemstone</h2>
                 <img class="img-fluid rounded-circle" src="assets/images/greenSp.jpg" class="mx-auto d-block">
             </div>
             <!-- crazy opal gemstone -->
-            <div id="crazyOp" class="col-md-3">
+            <div id="crazyOp" class="col-md-3 gemStone" value="4">
                 <h2>Crazy Opal</h2>
                 <img class="img-fluid rounded-circle" src="assets/images/roundOpal.jpg" class="mx-auto d-block">
 
@@ -88,7 +88,7 @@
             <div class="col-md-4"></div>
             <div id="total" class="col-md-4">
                 <h3>Total score</h3>
-                <p id="userTotal">text</p>
+                <p id="userTotal"></p>
 
             </div>
 
@@ -97,7 +97,7 @@
 
         <hr>
 
-    </div> <!-- /container -->
+    </div> 
 
 
 
