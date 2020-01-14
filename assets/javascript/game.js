@@ -39,12 +39,6 @@
     ///
     //Main game's functions
     function resetGm() {
-        randomNum = Math.floor(Math.random() * (120 - 19) + 19);
-        blueD = Math.floor(Math.random() * (12 - 1) + 1);
-        redG = Math.floor(Math.random() * (12 - 1) + 1);
-        greenG = Math.floor(Math.random() * (12 - 1) + 1);
-        crazyOp = Math.floor(Math.random() * (12 - 1) + 1)
-        targetNum = 0;
 
         // page at reset
         $("#secretScore").html(randomNum);
@@ -53,6 +47,7 @@
     }
 
     function startGm() {
+        // give the start of the game some random numbers to target and use for the gemstones
         randomNum = Math.floor(Math.random() * (120 - 19) + 19);
         blueD = Math.floor(Math.random() * (12 - 1) + 1);
         redG = Math.floor(Math.random() * (12 - 1) + 1);
@@ -60,7 +55,7 @@
         crazyOp = Math.floor(Math.random() * (12 - 1) + 1)
         targetNum = 0;
 
-        // page at start of the game
+        // setting the page at start of the game
         $("#secretScore").html(randomNum);
         $("#userTotal").html(targetNum);
 
@@ -82,9 +77,12 @@
         $("#crazyOp").attr("value", crazyOp);
         var gemValue = $("#crazyOp").attr("value");
         console.log("crazyOpVal  " + gemValue);
+        // need to console the radomNum to verify it makes a new one
+        console.log("NewSecret: " + randomNum)
 
-
-        // clicking any gemStone will give it a value, and update the user total score
+        // clicking any gemStone will give it a value, and update the user total score, the .off stops the "previous values" of the gemstones 
+        // from being tied to the gemstones again for the next game, or reset (if it had 10, then it carries over and addes)
+        // this was a problem for awhile until I found that the .off will undo the .on, until it listens for the click again
         $(".gemStone").off().on('click', function () {
 
             // adding the value of the "this gemstone" to the targetNum
@@ -98,7 +96,7 @@
                 //    * The player wins if their total score matches the random number from the beginning of the game.
                 alert("Winner");
                 wins++;
-                $("#wins").html(wins);
+                $("#wins").html("Wins: " + wins);
                 $("#userTotal").html(0);
                 //    * The game restarts whenever the player wins or loses.
                 resetGm();
@@ -108,7 +106,7 @@
             else if (targetNum > randomNum) {
                 alert("Loser");
                 loss++;
-                $("#loss").html(loss);
+                $("#loss").html("loss: " + loss);
                 $("#userTotal").html(0);
                 //    * The game restarts whenever the player wins or loses.
                 resetGm();
