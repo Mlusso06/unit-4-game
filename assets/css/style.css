@@ -1,25 +1,21 @@
 body html {
     height: 100%;
     margin: 0;
-
 }
-
+/* adding my background image to the body, and make sure it looks good under the Jumbo */
 body {
     background-image: url("../images/woodtableBG.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-
-
-
 }
-
+/* clean up the text for these items  */
 #target, #winLoss {
     text-align: center;
     font-size: xx-large;
 }
-
+/* adding a cool little box */
 #total {
     text-align: center;
     background-color: bisque;
@@ -30,7 +26,7 @@ body {
     font-size: larger;
     font-family: fantasy;
 }
-
+/* Making a cool little box for the randome number */
 #secretScore {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
@@ -42,7 +38,7 @@ body {
     margin: 0 auto;
     background-color: chartreuse;
 }
-
+/* same box but for the wins and loss */
 #winLossBox {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
