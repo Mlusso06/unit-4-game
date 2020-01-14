@@ -1,11 +1,6 @@
 
 
-    // This is to make sure the DOM is fully loaded before running
-
-
-
-
-    // List of Global Variables 
+      // List of Global Variables 
 
     // randomNum math - a number between 120 and 19 = target for the user
     var randomNum = Math.floor(Math.random() * (120 - 19) + 19);
@@ -34,13 +29,13 @@
     //    * The player will be shown a random number at the start of the game.
     $("#secretScore").html(randomNum);
 
-
+  // This is to make sure the DOM is fully loaded before running
     $(document).ready(function () {
     ///
     //Main game's functions
     function resetGm() {
 
-        // page at reset
+        // reset the page so that the game will show a new random number and set target back to O
         $("#secretScore").html(randomNum);
         $("#userTotal").html(targetNum);
         startGm()
@@ -81,7 +76,7 @@
         console.log("NewSecret: " + randomNum)
 
         // clicking any gemStone will give it a value, and update the user total score, the .off stops the "previous values" of the gemstones 
-        // from being tied to the gemstones again for the next game, or reset (if it had 10, then it carries over and addes)
+        // from being tied to the gemstones again for the next game, or reset (if it had 10, then it carries over and adds to the gem increasing it true new value)
         // this was a problem for awhile until I found that the .off will undo the .on, until it listens for the click again
         $(".gemStone").off().on('click', function () {
 
